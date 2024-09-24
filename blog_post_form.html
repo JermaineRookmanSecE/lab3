@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <title>Blog Creator Form</title>
+</head>
+
+<style>
+body {
+    background-color: rgb(85, 187, 176);
+}
+
+h1{
+    color: white
+}
+h2{
+    color: white
+}
+</style>
+
 <body>
+    <h1>Blog Creator Form</h1>
+    
+    <h2>Identifying details</h2>
     <input type ="text" name ="blogpostname" placeholder="Enter blogpost name: ">
     <input type ="text" name ="authorname" placeholder="Enter your name:">
-
+    
+    <h2>Brief Rundown of your blog</h2>
     <textarea id="Blog info" name="Blog" rows="4" cols="50" 
-    placeholder =  "Enter Information about your blog"> </textarea>
+    placeholder = "Enter Information about your blog"> </textarea>
 
+    <h2>Category Selection</h2>
     <select name = "blogs" id="blog-select">
         <option value="">--Select your blog category--</option>
         <option value="Sports">Sports</option>
@@ -19,6 +41,9 @@
         <option value="Occupations">Occupations</option>
     </select>
 
+    <h2>Submission</h2>
+<button type ="submit" onclick="alert('Form Submitted Succesfully')"
+>Click when complete</button>
 
 </body>
 
